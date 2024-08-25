@@ -1,0 +1,48 @@
+---
+title: "lesson 2"
+output: html_notebook
+---
+
+## Operaciones con Vectores
+
+En R podemos crear listas con la funcion c(). Tambien podemos crear una secuencia con seq o ":"
+```{r}
+```
+## Funciones sobre vectores
+ejemplo: sumatoria de 
+$$
+\sum_{n=0}^{n=100} n
+$$
+
+```{r}
+```
+## indexacion y slicing en vectores
+```{r}
+```
+# Matrices en R
+```{r}
+
+```
+```{r}
+```
+## dataframes en R
+
+Listo of available built-in datasets in R:
+```
+data()
+```
+
+```{r}
+
+```
+
+## Crear un dataframe vacio
+```{r}
+
+```
+
+
+
+
+
+

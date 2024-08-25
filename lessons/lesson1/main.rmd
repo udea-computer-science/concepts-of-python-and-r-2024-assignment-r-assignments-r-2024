@@ -1,0 +1,200 @@
+---
+title: "Lesson R - 1"
+output:
+  html_notebook: default
+  pdf_document: default
+---
+
+## Definir el directorio de trabajo
+R necesita que se defina el directorio donde se esta trabajando, en jupyter notebook el directorio sera desde donde se ejecuta en el terminal el comando `Jupyter notebook`
+
+
+```{r}
+
+```
+
+
+## Manejo de Paquetes
+R tiene un repositorio donde estan la mayoria de [paquetes cran](https://cran.r-project.org/web/packages/available_packages_by_name.html):
+
+- Desde el menu en Rstudio en: Packages->Install package(s).
+- **Nota:** Anaconda instala los paquetes mas importantes para r asi:
+
+Para importar librerias usamos `library`
+```{r}
+# Importar una libreria
+library(stringr) # Esta ya esta instalada
+```
+
+Para averiguar el estado de instalacion de un paquete usamos `require`:
+```{r}
+
+```
+
+### Instalar, Eliminar y actualizar paquetes de CRAN
+
+
+Para instalar paquetes se usa el comando `install.packages()`
+```{r}
+# Antes de instalar un paquete es bueno detectar si ya esta instalado
+
+```
+
+
+
+Listar paquetes instalados:
+```{r}
+installed.packages()
+```
+
+
+
+Note que es diferente instalar un paquete a importarlo para hacerlo disponible en el kernel. La instalacion solo se
+requiere una vez, mientras que la importacion se requiere cada que se va a usar:
+
+```{r}
+if(!require(sos)) # verificar el paquete 	Splines on the sphere (sos)
+    install.packages("sos") # Comando para instalar paquetes, note las dobles comillas
+library(sos) #Importar libreria
+findFn("audio")# Buscar paquetes que contengan la palabra audio
+```
+
+### Instalar paquetes con conda
+El listado de paquetes se puede ver en : https://anaconda.org/r/repo
+
+Para instalar un paquete se hace en linea de comando asi:
+
+`conda install -c r [nombre-del-paquete]`
+
+Por ejemplo, para instalar el kernel de r en jupyter podemos usar conda:
+
+```{bash}
+#conda install -c r r-irkernel
+#conda install -c r r-essentials
+```
+
+
+## Obteniendo ayuda con R
+Además de una búsqueda en google o de visitar [StackOverflow](www.stackoverflow.com), hay algunas maneras incorporadas de obtener ayuda con R! La mayoría de las funciones R tienen documentación en línea.
+
+- help(algo) documentacion
+- help.search("algo") Busca en la ayuda
+- apropos("algo") nombre de todos los objetos parecidos a ”algo”
+- help.start() Inicia la version HTML de la ayuda
+
+```{r}
+
+```
+
+
+
+## Aritmetica con R
+
+Operaciones aritmeticas
+```{r}
+
+```
+
+
+## Variables en R
+```{r}
+
+```
+
+
+
+
+## Tipos de Datos
+### Datos de punto flotante:
+```{r}
+
+```
+
+### Datos enteros:
+```{r}
+
+```
+
+### Datos booleanos o Logicos:
+```{r}
+
+```
+
+### Caracteres (Characters)
+los datos tipo Texto/string son conocidos como characters en R.
+```{r}
+
+```
+
+```{r}
+
+```
+
+### Verificar la typo de variable
+
+Se puede realizar con la funcion class():
+
+
+```{r}
+
+```
+
+
+
+
+
+
+### Manejo de Variables en el workspace
+listado de las variables en el workspace
+```{r}
+ls()
+```
+
+
+Borrar una variable del workspace
+```{r} 
+
+
+```
+
+
+
+Instalar libreria `tidyverse`
+```{r}
+
+
+```
+
+Crear un histograma 
+
+```{r}
+
+```
+
+# Graficas en R
+
+Grafica simple con funcion plot
+
+```{r}
+
+```
+
+
+
+
+## Liberria ggplot2
+Es la principal libreria de graficos en R. Como importar la libreria:
+```{r}
+
+```
+
+
+
+## Libraria Plotly
+La libreria Plotly permite realizar graficos interactivos
+
+```{r}
+
+```
+
+
