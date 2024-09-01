@@ -1,0 +1,9 @@
+serie_1 <- function(n){
+    acum <- 0
+    for (i in 1:n){
+        acum <- acum + ((-1**n)*tanh(i))
+    } 
+    return acum
+}
+
+print(serie_1(30))
